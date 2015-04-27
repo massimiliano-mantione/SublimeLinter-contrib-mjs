@@ -28,6 +28,8 @@ Before using this plugin, you must ensure that `mjs` is installed on your system
 ### Linter configuration
 In order for `mjs-check` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
 
+Moreover, mjs-check must be installed locally in your project (the mjs compiler will not find the globally installed "mjs-check" module).
+
 Once you have installed and configured `mjs-check`, you can proceed to install the SublimeLinter-contrib-mjs plugin if it is not yet installed.
 
 ### Plugin installation
@@ -41,13 +43,6 @@ To install via Package Control, do the following:
 
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings][settings]. For information on generic linter settings, please see [Linter Settings][linter-settings].
-
-In addition to the standard SublimeLinter settings, SublimeLinter-contrib-mjs provides its own settings. Those marked as “Inline Setting” or “Inline Override” may also be [used inline][inline-settings].
-
-|Setting|Description|Inline Setting|Inline Override|
-|:------|:----------|:------------:|:-------------:|
-|foo|Something.|&#10003;| |
-|bar|Something else.| |&#10003;|
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
